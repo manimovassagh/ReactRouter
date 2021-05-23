@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react'
 import UseFetch from "./UseFetch"
-import Post from "./Types"
 import { Link } from 'react-router-dom'
 
 export function UserList(): ReactElement {

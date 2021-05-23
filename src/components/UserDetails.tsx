@@ -1,14 +1,20 @@
 import React from 'react'
-    import UseFetch from "./UseFetch"
-    import {useParams} from "react-router-dom";
-      
+import { useParams } from "react-router-dom";
+import UseFetchOne from './UseFetchOne';
+
+
+type Id = {
+    [key: string]: string
+}
+
 export default function UserDetails() {
-    console.log(useParams())
+    const { id } = useParams<Id>()
+    const data= UseFetchOne(`https://jsonplaceholder.typicode.com/comments/${id}`)
+    console.log(data)
     return (
 
-
         <div>
-            just check
+            check
         </div>
     )
 }

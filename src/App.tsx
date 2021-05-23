@@ -3,12 +3,10 @@ import { UserList } from './components/UserList';
 import UserDetails from './components/UserDetails';
 import './App.css';
 import {
-  BrowserRouter as Router,
+  BrowserRouter ,
   Switch,
   Route,
-  Link,
-  BrowserRouter,
-  NavLink
+    NavLink
 } from "react-router-dom";
 
 

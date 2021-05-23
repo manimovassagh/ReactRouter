@@ -15,9 +15,9 @@ function App():ReactElement{
   return (
        <div className="App">
           <BrowserRouter>
-          <div className="ui secondary  menu">
-          <NavLink to="/comments">Home</NavLink>
-          <NavLink to="/:id">Details</NavLink>
+          <div className="ui menu">
+          <NavLink to="/comments" className="item">Home</NavLink>
+          <NavLink to="/:id" className="item">Details</NavLink>
           </div>
 
       <Switch> 

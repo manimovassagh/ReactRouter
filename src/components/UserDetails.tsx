@@ -19,7 +19,7 @@ export default function UserDetails() {
           {data?.body}
           {data?.name}
           {data?.email}
-          <button onClick={handleClick}>Back to Home</button>
+          <button  className="ui brown button" onClick={handleClick}>Back to Home</button>
         </div>
     )
 }

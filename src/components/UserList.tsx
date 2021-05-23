@@ -8,13 +8,15 @@ export function UserList(): ReactElement {
 
     if (!data) { return <div>Loading</div> }
     return (
-        <div>
+        <div className="ui list">
             {data.map((data) =>
             <Link to={`/comments/${data.id}`}>
-                <div key={data.id}>
-                    <span>{data.name}</span>
-                    <span>{data.email}</span>
-                    <span>{data.name}</span>
+                <div className="item" key={data.id}>
+                <i className="users icon"></i>
+                    <div className="item">{data.name}</div>
+                    <i className="mail icon"></i>
+                    <div className="content">{data.email}</div>
+                    
                 </div>
                 </Link>
             )}
